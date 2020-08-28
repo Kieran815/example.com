@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+
+<html>
+
+  <head>
+    
+    <meta lang='en'>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Kieran Milligan Resume Page">
+    <meta name="keywords" content="hello, introduction, intro, full-stack, web developer, full-stack web developer">
+    <link rel="stylesheet" type="text/css" href="./dist/css/main.min.css">
+    
+    <title>Kieran Milligan | Resume</title>
+
+  </head>
+
+  <body>
+
+    <header>
+
+      <span class="logo">My Website</span>
+      <a id="toggleMenu">Menu</a>
+      <nav>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="resume.html">Resume</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+      </nav>
+
+    </header>
+
+    <main>
+
+      <section>
+        <h1 class="res-hl">Kieran Milligan</h1>
+    </header>
+        <div class="res-hl-con">
+          <span>Chicago, IL</span>
+          &#x25CF;
+          <a href="mailto: kieran.milligan@gmail.com">kieran.milligan@gmail.com</a>
+          &#x25CF;
+          <a href="https://www.linkedin.com/in/kieran-m-5201716a/" target="_blank" rel="noopener">LinkedIn</a>
+        </div>
+      </section>
+
+      <section>
+        <h2 class="res-hl">Full Stack Web and Hybrid Mobile Applications Developer</h2>
+        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+        <ul>
+          <li>It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</li>
+          <li>It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</li>
+        </ul>
+      </section>
+
+      <section>
+        <h3 class="res-hl">Core Competencies</h3>
+        <div class="res-comps">
+          <ul>
+            <li>Contrary to popular belief,</li>
+            <li>Lorem Ipsum is not simply random text.</li>
+          </ul>
+          <ul>
+            <li>It has roots in a piece of classical Latin literature from 45 BC</li>
+            <li>making it over 2000 years old.</li>
+          </ul>
+        </div>
+      </section>
+
+      <section>
+        <h3 class="res-hl"><u>Certifications / Technical Proficiencies</u></h3>
+        <div class="res-certs">
+          <table>
+            <tr>
+              <td><em>Certifications:</em></td>
+              <td><a href="https://www.scrumalliance.org/community/profile/kmilligan6" target="_blank" rel="noopener">Certified Scrum Master</a></td>
+            </tr>
+            <tr>
+              <td><em>Platforms:</em></td>
+              <td>Linux, Windows, LAMP, JAM, NodeJS</td>
+            </tr>
+            <tr>
+              <td><em>Databases/CMS:</em></td>
+              <td>MySQL, PHP, Firebase, AWS, WordPress, Netlify</td>
+            </tr>
+            <tr>
+              <td><em>Tools:</em></td>
+              <td>VSCode, Atom, SSH, Git, GraphQL, NPM, React, Gatsby, Angular</td>
+            </tr>
+            <tr>
+              <td><em>Languages:</em></td>
+              <td>HTML, CSS, JavaScript, ES6, JSX, PHP, Bash, SQL</td>
+            </tr>
+          </table>
+      </section>
+
+      <section>
+        <h3 class="res-hl"><u>Professional Experience</u></h3>
+        <div class="res-exp">
+          <div class="res-co-date">
+            <p><strong>Company 1</strong></p>
+            <p><strong>Dates</strong></p>
+          </div>
+          <p>Brief Company Description</p>
+          <strong>Job Title</strong>
+          <ul>
+            <li>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old.</li>
+            <li>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old.</li>
+          </ul>
+          <em><u>Key Contributions:</u></em>
+          <ul>
+            <li>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old.</li>
+            <li>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old.</li>
+          </ul>
+        </div>
+      </section>
+
+      <section>
+        <h3 class="res-hl"><u>Education</u></h3>
+        <div>
+          <p class="res-sch-date">
+            <span>School Name - City</span>
+            <span>Dates Attended</span>
+          </p>
+          <strong>Degree / Certification</strong>
+        </div>
+        <div>
+          <p class="res-sch-date">
+            <span>School Name - City</span>
+            <span>Dates Attended</span>
+          </p>
+          <strong>Degree / Certification</strong>
+        </div>
+      </section>
+
+
+      <br>
+      <br>
+    </main>
+
+    <script>
+      var toggleMenu = document.getElementById('toggleMenu');
+      var nav = document.querySelector('nav');
+      toggleMenu.addEventListener(
+        'click',
+        function(){
+          if(nav.style.display=='block'){
+            nav.style.display='none';
+          }else{
+            nav.style.display='block';
+          }
+        }
+      );
+    </script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js"></script>
+  </body>
+
+</html>
