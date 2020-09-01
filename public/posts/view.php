@@ -1,7 +1,6 @@
 <?php
 // include db connection information
 include '../../core/db_connect.php';
-// include bootstrap cdn
 // require '../../core/bootstrap.php';
 
 // filter input for security

@@ -1,8 +1,9 @@
 <?php
 // include connection to database
 include '../../core/db_connect.php';
+// require '../../core/bootstrap.php';
 
-$content = null;
+$content = "<h1>Blog Posts</h1>";
 
 // GET posts from db
 $stmt = $pdo->query('Select * FROM posts');
@@ -14,8 +15,14 @@ while ($row = $stmt->fetch()) {
 
   // update `content` to list and concatenate fetched data
   // in PHP, `.=` means `concat`
-  $content .= "<a href=\"post?slug={$row['slug']}\">{$row['title']}</a> ";
+  $content .= "<div><a href=\"view.php?slug={$row['slug']}\">{$row['title']}</a></div>";
 }
+
+$content .= <<<EOT
+<div class="form-group">
+  <a href="add.php" class="btn btn-primary">New Post</a>
+</div>
+EOT;
 
 // add `layout` template
 include '../../core/layout.php';
