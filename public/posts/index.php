@@ -12,10 +12,9 @@ $stmt = $pdo->query('Select * FROM posts');
 while ($row = $stmt->fetch()) {
   // and dump on page
   // var_dump($row);
-
   // update `content` to list and concatenate fetched data
   // in PHP, `.=` means `concat`
-  $content .= "<div><a href=\"view.php?slug={$row['slug']}\">{$row['title']}</a></div>";
+  $content .= "<a href=\"view.php?slug={$row['slug']}\">{$row['title']}</a>";
 }
 
 $content .= <<<EOT

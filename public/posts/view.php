@@ -12,9 +12,9 @@ $input = filter_input_array(INPUT_GET);
 
 // method to sanitize the slug by forcing it into a predefined format; prevents user manipulation.
 $slug = preg_replace("/[^a-z0-9-]+/","",$input['slug']);
-
 // method to pass slug variable into sql query
 $stmt = $pdo->prepare("SELECT * FROM posts WHERE slug=:slug");
+
 // call method with slug;
 $stmt->execute(['slug'=>$slug]);
 $row = $stmt->fetch();
